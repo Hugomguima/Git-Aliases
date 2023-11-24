@@ -1,5 +1,5 @@
 # Git-Aliases
-This is a public repository providing my prefered git aliases
+This is a public repository providing my preferred git aliases
 
 Updated git aliases on my local machine
 
