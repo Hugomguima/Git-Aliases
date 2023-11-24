@@ -24,3 +24,4 @@ echo 'alias dc="docker-compose"' >> ~/.bashrc
 # Save changes
 source ~/.bashrc
 ```
+
