@@ -15,13 +15,21 @@ git config --global alias.amp '!f() { git add -A && git commit -m "$1" && git pu
 
 ## Ubuntu aliases added
 
+### Docker Aliases
+
 `docker-compose` is a long command, thus, it should be replaced with `dc`.
 
 To do so, you should edit the `~/.bashrc` file, which can either be done manually or programmatically like this:
 ```sh
 # Add the alias to the `~/.bashrc` file 
 echo 'alias dc="docker-compose"' >> ~/.bashrc
+# Clean docker images, containers, and volumes (doesn't work when there are none existing)
+echo 'alias docker-clean="docker stop \$(docker ps -q) && docker system prune -a"' >> ~/.bashrc
+
+
 # Save changes
 source ~/.bashrc
 ```
+
+
 
